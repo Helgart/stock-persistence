@@ -13,15 +13,6 @@ type Database struct {
 	connexion *sql.DB
 }
 
-// DatabaseParameters represents the parameters used to establish a database connection.
-type DatabaseParameters struct {
-	Host     string
-	Port     uint
-	User     string
-	Password string
-	Name     string
-}
-
 // ConnexionError represents an error that occurred during database connection.
 type ConnexionError struct {
 	PreviousError      error
